@@ -1,11 +1,12 @@
 .logo{
-    width: 20%;
-    height: 20%;
-}
-.servicios{
-    display: inline-block;
-}
-.carrito{
     width: 10%;
     height: 10%;
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: rgba(23, 23, 158, 0.897);
+}
+.navbar a{
+    color: rgba(233, 206, 54, 0.993);
 }
