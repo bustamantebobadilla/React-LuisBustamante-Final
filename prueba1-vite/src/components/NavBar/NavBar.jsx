@@ -8,7 +8,7 @@ export const NavBar = () => {
         <img src="./media/You_logo.jpg" className="logo"></img>
         <a className= "nav-link" href=" ">Inglés</a>
         <a className= "nav-link" href=" ">Español</a>
-        <a className= "nav-link"  href=" ">Frances</a>
+        <a className= "nav-link"  href=" ">Francés</a>
         <a className= "nav-link" href=" ">Contacto</a>
         <a className= "nav-link" href=" ">
         <CartWidget/>
