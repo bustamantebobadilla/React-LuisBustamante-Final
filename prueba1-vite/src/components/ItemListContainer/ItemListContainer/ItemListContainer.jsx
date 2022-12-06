@@ -51,7 +51,6 @@ const ItemListContainer = ({}) => {
       <Titulo
         titulo={tituloApp}
     />
-    <Item />   
     <section>{loading ?  <h2>Cargando...</h2>:
       products.map(product => 
       <div style={{ marginLeft: 100}} className='col-md-3'key={product.id}
@@ -65,7 +64,7 @@ const ItemListContainer = ({}) => {
         {product.precio}                                                            
       </div>
       <div className="card-footer">                                                        
-      <button className="btn btn-outline-primary btn-block">detalle del producto</button>
+      <button className="btn btn-outline-primary btn-block">Más Información</button>
       </div>
     </div>
   </div> 
