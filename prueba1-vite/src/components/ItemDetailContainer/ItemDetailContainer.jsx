@@ -1,15 +1,18 @@
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { gFetch } from '../../helpers/gFetch';
 import ItemCount from '../ItemCount/ItemCount'
 
     const ItemDetailContainer =() =>{
         const [product,setProduct] =useState({})
+
+        const{ productId }= useParams()
     
         useEffect(()=>{
-            gFetch() //no me detecto el gFetch
-            .then(respProd=> setProduct (respProd[0]))
+            gFetch()
+            .then(respProd=> setProduct (respProd.find(prod=>prod.id===productId)))
             .catch(err => console.log(err))
         }
         )
